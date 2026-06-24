@@ -44,7 +44,14 @@
       width: 180px;
     }
   }
+
+   .project-title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;} 
+  
   .flex-container {
+    text-align: center;
     display: flex;
     width: 100%;
     align-items: center;
@@ -63,4 +70,18 @@
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+  }
+  .contact_container {
+        display: flex;
+        width: 100%;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        justify-content: center;
+
+  }
+  .contact_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
   }
