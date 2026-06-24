@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+
+
+
+</head>
+<body>
+
+<div class="profile-container">
+  <!-- Section 1: Picture -->
+  <div class="profile-image">
+    {% load static %}
+<img src="{% static 'images/profile.jpg' %}">
+  </div>
+
+  <!-- Section 2: Bio -->
+  <div class="profile-bio">
+    <h2>Timothy Sailer II</h2>
+    <p>
+     Tim is web developer familiar with full stack skills including Python SQL, and React, as well as HTML . He is passionate about creating
+     user-friendly web applications and has a keen interest in learning new technologies. In his free time, he enjoys contributing to open-source
+     projects and exploring the latest trends in web development.
+  </div>
+</div>
+
+</body>
+{% endblock %}

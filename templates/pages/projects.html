@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+
+<body>
+    <h1>Project Examples</h1>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Blog Style</h2>
+            {% load static %}
+            <img src="{% static 'images/project1.png' %}" alt="Tim's Place">
+             <p> This is for a local business who wanted to get their name out there. This contains basic HTML CSS and Javascript </p>
+             link to project: <a href="https://github.com/timothysailer2/102" target="_blank">View Project GitHub</a>
+        </div>
+        <div class="flex-item">
+            <h2>Temperature Converter</h2>
+            <img src="{% static 'images/project2.png' %}" alt="temp">
+             <p> This is a simple temperature converter </p>
+             link to project: <a href="https://github.com/timothysailer2/103" target="_blank">View Project GitHub</a>
+        </div>
+        <div class="flex-item">
+            <h2>Portfolio Website</h2>
+            <img src="something.here" alt="Project Image">
+             <p> This is a blog platform where users can create and share their own blog posts. It includes features like user authentication, commenting, and post categorization. </p>
+             link to project: <a href="https://example.com/project3" target="_blank">View Project GitHub</a>
+        </div>
+    </div>
+
+</body>
+
+{% endblock %}
