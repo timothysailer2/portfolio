@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 65%;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -14,22 +14,24 @@
   }
 
   .profile-image img {
-    width: 100%;
+    width: 300%;
     height: auto;
     border-radius: 10px;
     display: block;
   }
 
   .profile-bio {
-    flex: 1;
+    flex: 2;
   }
 
   .profile-bio h2 {
-    margin-top: 0;
+    display: flex;
+    padding-left: 300px;
   }
 
   .profile-bio p {
     line-height: 1.6;
+    padding-left: 300px;
   }
 
   /* Mobile */
@@ -84,4 +86,57 @@
     flex-direction: row;
     align-items: center;
     padding: 100px;
+  }
+  .resume-contact {
+    display: flex;
+    
+    
+    border-bottom: 2px solid #000000;
+  }
+  .resume-contact h1 {
+    font-size: 64px;
+    display: flex;
+    padding-top: 40px;
+    
+  }
+  .resume-contact-item{
+    display: flex;
+    content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 1200px;
+    margin-bottom: 10px;
+  }
+  .resume-summary{
+    border-bottom: 2px solid #000000;
+    margin-top: 30px;
+  }
+
+ .exp{
+    display: flex;
+    justify-content: center;
+ }
+   h3{
+    font-size: 20px;
+    
+  } 
+  h4{
+    font-size: 16px;
+    
+  }
+  .resume-experience{
+    border-bottom: 2px solid #000000;
+    display: flex;
+    
+   
+  }
+  .resume-experience-item{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px
+   
+   
   }
