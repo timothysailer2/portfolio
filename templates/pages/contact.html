@@ -1,26 +1,31 @@
 {% extends 'base.html' %}
-{% load static %}
+
 
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-{% load static %}
-<div class="contact_container">
-    <div class="contact_item">
-        <h3>Phone:</h3>
-        657.352.3595
-    </div>
-    <div class="contact_item">
-        <h3>Email:</h3>
-        <a href="mailto:tim.sailer283@gmail.com">tim.sailer283@gmail.com</a>
-    </div>
-    <div class="contact_item">
-        <h3>LinkedIn:</h3>
-        <a href="https://www.linkedin.com/in/timothy-sailer-ii-0b1b4a1b6/">My LinkedIn Profile</a>
-    </div>
-</div>
 
 
-
+<body>
+    {% load static %}
+    <form class="email" method="POST" >
+    {% csrf_token %}
+   <div class="form">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+    </div> 
+    <div class="form">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+    </div>
+    <div class="message">
+        <label>Message:</label>
+        <textarea name="message" required></textarea>
+    </div>
+    <div class="button">    
+        <button type="submit">Send</button>
+    </div>
+    </form>
+</body>
 
 {% endblock %}
